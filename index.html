@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Sandbox</title>
+  <style>
+    /* ✏️ CSS lives here — change colors, fonts, spacing */
+    body {
+      font-family: sans-serif;
+      max-width: 640px;
+      margin: 60px auto;
+      padding: 0 20px;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h1 { color: #5c4af7; }
+    button {
+      background: #5c4af7;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    button:hover { background: #4437d4; }
+    #output {
+      margin-top: 16px;
+      font-size: 18px;
+      min-height: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✏️ HTML lives here — this is the structure of your page -->
+  <h1>My Sandbox</h1>
+  <p>A place to try things out. Break stuff. Learn.</p>
+
+  <button onclick="sayHello()">Click me</button>
+  <div id="output"></div>
+
+  <script>
+    // ✏️ JavaScript lives here — this is what makes things happen
+    function sayHello() {
+      document.getElementById('output').textContent = 'It works! 🎉';
+    }
+  </script>
+
+</body>
+</html>
