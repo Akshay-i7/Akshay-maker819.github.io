@@ -1,8 +1,23 @@
 <!DOCTYPE html>
 <html>
-    <head></head>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/header.css">
+    </head>
     <body>
         <style>
+            p{
+                font-family:Roboto;
+            }
+            div{
+                font-family:Roboto;
+            }
             .profile{
                 width:140px;
                 box-shadow: 1px 1px 10px black;
@@ -10,6 +25,7 @@
                 display:inline-block;
                 vertical-align:top;
                 margin-left:10px;
+                margin-bottom:50px;
             }
             .cat{
                 width:140px;
@@ -47,7 +63,62 @@
                 border-radius:3px;
                 width:90px;
             }
+            .download{
+                width:70px;
+                margin-right:25px;
+                margin-left:80px;
+                color:white;
+                border:solid;
+                padding-top:5px;
+                padding-bottom:5px;
+                padding-left:6px;
+                padding-right:6px;
+                border-color:white;
+                border-width:2px;
+                border-radius:2px;
+                
+            }
+            .flex{
+                display:flex;
+                flex-direction:row;
+                background-color: rgb(124, 66, 179);
+                height:50px;
+                align-items:center;
+                justify-content:space-between;
+                width:700px;
+                margin-bottom:20px;
+                border-radius:5px;
+            }
+            .home{
+                width:70px;
+                color:white;
+                font-weight:bold;
+                margin-left:25px;
+                margin-right:80px;
+            }
+            
+            .search{
+                display:flex;
+                flex:1;
+
+            }
+            .search-bar{
+                flex:1;
+                border-radius:20px;
+                border:1px white;
+                box-shadow:none;
+                height:25px;
+                font-size:16px;
+                padding-left:10px;
+            }
         </style>
+        <div class="flex">
+            <div class="home">Home</div>
+            <div class="search"><input class="search-bar" type="text" placeholder="Search"></div>
+            <div class="download">Download</div>
+        </div>
+
+
         <div class="profile">
             <img class="cat" src="cat.jpg">
             <p class="name">Pole</p>
@@ -66,5 +137,7 @@
             <p class="close">0 mutual friends</p>
             <p class="add">Add Friend</p>
         </div>
+
+        
     </body>
 </html>
